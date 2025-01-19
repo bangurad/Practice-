@@ -1,10 +1,16 @@
+//Scanner Import
+import java.util.Scanner;
+
 // Class Header
 public class don101pt2{ //start class//
-    // start main method //
-    public static void main(String[] args) { 
-    // start class
+  
+    public static void main(String[] args) { // Start main method
+
+        // scanner object
+        Scanner keyboard = new Scanner (System.in);
+        
         /* 
-         * conditional operaators
+         * conditional operators
          < less than - this is executed if a vlaue is smaller than another
          > greater than - this is executed if a value is larger than another
          <= less than or equal to - this is executed if a value is larger than or equal to another
@@ -98,4 +104,3 @@ public class don101pt2{ //start class//
 
 
 } //end class
-
