@@ -99,6 +99,29 @@ public class don101pt2{ //start class//
             System.out.println(" Drink some hot chocolate, maybe stay inside");
           }
 
+          /*
+           * reading inputs (Scanner data types)
+           * keyboard.nextLine() - used when reading a String
+           * keyboard.nextInt() - used when reading integers (int)
+           * keyboard.nextDouble - used when reading decimal numbers (double)
+           */
+
+          // ask for name
+          System.out.print("Please enter your name: ");
+          // name variable
+          String name = keyboard.nextLine();
+
+          //display name
+          System.out.println(" Nice to meet you " + name);
+
+          // ask for age
+          System.out.print("Please enter how old you are?: ");
+          // age variable
+          int years = keyboard.nextInt();
+
+          // display age in years
+          System.out.println (" You are " + years +  " years old");
+
 
     } // end main method
 
