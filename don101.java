@@ -46,6 +46,38 @@ public class don101{    //Start Class//
          // practice
          System.out.println("The temperature today is " + temp);
 
+         /*
+        * Math operations
+        + (used for addition)
+        - (used for subraction)
+        * (used for multiplication)
+        / (used for division)
+        % (used to find the remainder)
+        Math.pow (used to find for exponents)
+        Math.sqrt (used to find teh square root)
+
+        */
+
+        // addition operation
+        int addUp = 9 + 12;
+
+        // multiplication operation
+        int mult = 4 * 7;
+
+        // division opertation
+        int div = 81 / 6;
+
+        // subtraction operation
+        int sub = 32 - 30;
+
+        // practice
+        System.out.println("9 + 12 is " + addUp );
+
+        System.out.println("4 * 7 is "  + mult );
+
+        System.out.println("81 / 6 is " + div );
+
+        System.out.println("32 minus 30 is " + sub );
 
     }   //end main method
 
