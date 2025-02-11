@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Money Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #27ae60;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #219150;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background: #dff9fb;
+            border-left: 5px solid #27ae60;
+            text-align: left;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Money Manager</h1>
+        <p>Manage your money wisely! Fill in your details below.</p>
+        <form id="studentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" rows="3" required></textarea>
+            
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        
+        <div id="output">
+            <h2>Your Profile</h2>
+            <p><strong>Name:</strong> <span id="outputName"></span></p>
+            <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+            <p><strong>Age:</strong> <span id="outputAge"></span></p>
+            <p><strong>Bio:</strong> <span id="outputBio"></span></p>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let age = document.getElementById("age").value;
+            let bio = document.getElementById("bio").value;
+            
+            if (name === "" || email === "" || age === "" || bio === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+            
+            document.getElementById("outputName").innerText = name;
+            document.getElementById("outputEmail").innerText = email;
+            document.getElementById("outputAge").innerText = age;
+            document.getElementById("outputBio").innerText = bio;
+            
+            document.getElementById("output").style.display = "block";
+        }
+    </script>
+</body>
+</html>
